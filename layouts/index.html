@@ -1,0 +1,61 @@
+{{ define "main" }}
+<section class="section container-fluid mt-n3 pb-3">
+  <div class="row justify-content-center">
+    <div class="col-lg-12 text-center">
+      <h1 class="mt-0">{{ .Title }}</h1>
+    </div>
+    <div class="col-lg-9 col-xl-8 text-center">
+      <p class="lead">{{ .Params.lead | safeHTML }}</p>
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}overview/introduction/" role="button">{{ i18n "get-started" }}</a>
+      <!-- <p class="meta">ADT - Manage Centrally</a></p> -->
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "sidebar-prefooter" }}
+  {{ if eq $.Site.Language.LanguageName "English" }}
+  <section class="section section-sm">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-5">
+          <h2 class="h4">Central Console</h2>
+          <p>Enroll and manage transfer agents from <a>transyra.com</a></p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">Reliable by default</h2>
+          <p>Always-on Transfer agents and monitor their health centrally</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">Standard Protocols</h2>
+          <p>SFTP, HTTP support for file upload and downloads. Resumable Site-Site file transfers</p>
+        </div>
+      </div>
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-5">
+          <h2 class="h4">HealthCare</h2>
+          <p>Coming Soon - Support Dicom protocols for data transfer and aggregation of dicom files based on properties</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">Extensible</h2>
+          <p>Need more protocols, please let us know - contact@palmyralabs.com</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">Reporting</h2>
+          <p>Coming Soon</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+{{ end }}
+
+{{ define "sidebar-footer" }}
+<section class="section section-sm container-fluid">
+  <div class="row justify-content-center text-center">
+    <div class="col-lg-9">
+      {{- .Content -}}
+    </div>
+  </div>
+</section>
+{{ end }}

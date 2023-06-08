@@ -1,0 +1,14 @@
+name = "Transyra"
+license = "MIT"
+licenselink = "https://github.com/h-enk/doks/blob/master/LICENSE"
+description = "Autonomous Data Transfer"
+
+homepage = "https://transyra.com"
+demosite = "https://doks.netlify.app"
+
+tags = ["landing page", "documentation", "blog", "minimal", "modern", "customizable", "search", "dark mode", "bootstrap"]
+features = ["security aware", "fast by default", "seo-ready", "development tools", "bootstrap framework", "netlify-ready", "full text search", "page layouts", "dark mode"]
+
+[author]
+  name = "Palmyra"
+  homepage = "https://palmyralabs.com"
