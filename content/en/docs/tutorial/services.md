@@ -12,3 +12,8 @@ weight: 200
 toc: true
 ---
 
+Click on the **"Add New Services"** option, and a dropdown will appear with server options to select from, such as SFTP Client, SFTP Server, Site-to-Site Server, Site-to-Site Client, and DICOM Receive.
+
+Select the desired file transfer services and provide all the necessary details for a successful transfer.
+
+For more information about the services, please visit the [Services](http://localhost:1313/docs/howto/services).
